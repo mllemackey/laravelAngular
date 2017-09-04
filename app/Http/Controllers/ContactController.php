@@ -14,7 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return 'eee';
+        return Contact::all();
     }
 
     /**
@@ -35,7 +35,7 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return Contact::create($request->all());
     }
 
     /**
